@@ -12,11 +12,11 @@ CaImAn implements a set of essential methods required in the analysis pipeline o
 ## Requirements
 
 Right now, CaImAn works and is supported on the following platforms:
-* Linux on Intel CPUs
-* MacOS on Intel CPUs
-* Windows on Intel CPUs
+* Linux on 64-bit x86 CPUs
+* MacOS on 64-bit x86 CPUs
+* Windows on 64-bit x86 CPUs
 
-16G RAM is required for a good experience, and depending on datasets, 32G or more may be necessary.
+32G RAM is required for a good experience, and depending on datasets, more may be necessary.
 
 CaImAn presently targets Python 3.8. Parts of CaImAn are written in C++, but apart possibly during install, this is not visible to the user. There is also an [older implementation](https://github.com/flatironinstitute/CaImAn-MATLAB) of CaImAn in Matlab (unsupported). That version can be used with [MCMC spike inference](https://github.com/epnev/continuous_time_ca_sampler) 
 
@@ -85,11 +85,9 @@ VolPy is an analysis pipeline for voltage imaging data. The analysis is based on
 * `volparams`: An object for setting parameters of voltage imaging. It can be set and changed easily and is passed into the algorithms.
 * `VOLPY`: An object for running the spike detection algorithm and saving results.
 
-The object detection network Mask R-CNN in VolPy is now compatible with tensorflow 2.4.1.
+The object detection network Mask R-CNN in VolPy is now compatible with tensorflow 2.4 or above.
 
-To see examples of how these methods are used, please consult the `demo_pipeline_voltage_imaging.py` script in the `demos/general` folder. For more information about the approach check the [preprint](https://www.biorxiv.org/content/10.1101/2020.01.02.892323v1).
-
-There is also a [general paper](https://journals.plos.org/ploscompbiol/article/comments?id=10.1371/journal.pcbi.1008806) on this pipeline
+To see examples of how these methods are used, please consult the `demo_pipeline_voltage_imaging.py` script in the `demos/general` folder. For more information about the approach check the [general paper](https://journals.plos.org/ploscompbiol/article/comments?id=10.1371/journal.pcbi.1008806) on this pipeline.
 
 ## Documentation & Wiki
 
